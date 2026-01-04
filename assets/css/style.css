@@ -178,6 +178,9 @@ h4 {
 
 
 /* Section spacing & layout */
+.section {
+    padding: 4.8rem 1.6rem;
+}
 
 
 /* Buttons / CTAs */
@@ -193,7 +196,15 @@ h4 {
     padding: 8px 2.4rem;
     background-color: var(--accent);
     color: var(--white);
+    border: 2px solid transparent;
     border-radius: var(--border-radius);
+}
+
+.btn-primary:hover {
+    font-weight: 700;
+    background-color: rgba(47, 93, 80, 0.10);
+    color: var(--accent);
+    border: 2px solid var(--accent);
 }
 
 /* Hero section */
@@ -202,7 +213,6 @@ h4 {
     flex-direction: column;
     gap: 2.4rem;
     background-color: var(--bg-main);
-    padding: 4.8rem 1.6rem;
 }
 
 .hero-content {
@@ -265,12 +275,43 @@ h4 {
     gap: 2.4rem;
     padding-top: 0;
   }
+
+  .btn-primary {
+    width: max-content;
+  }
+
+  .section {
+    padding: 6.4rem 3.2rem;
+  }
+
+  #hero-section {
+    flex-direction: row;
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  .hero-content {
+    width: 100%;
+    min-width: 38rem;
+  }
+
+  .hero-image {
+    height: 34rem;
+  }
 }
 
 
 @media (min-width: 992px) {
     #site-header {
         padding: 1.6rem 12rem;
+    }
+
+    .section {
+        padding: 6.4rem 12rem;
+    }
+
+    .hero-image {
+        height: 38rem;
     }
 }
 

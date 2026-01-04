@@ -37,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 #root, #__next {
   isolation: isolate;
 }
@@ -52,6 +56,8 @@ a {
   --white: #FFFFFF;
 
   --main-font: 'Inter', sans-serif;
+
+  --border-radius: 8px
 }
 
 
@@ -126,6 +132,8 @@ h4 {
   gap: 1.6rem;
 
   padding: 1.6rem;
+
+  border-bottom: 1px solid var(--border-surface);
 }
 
 /* Logo */
@@ -169,6 +177,69 @@ h4 {
 }
 
 
+/* Section spacing & layout */
+
+
+/* Buttons / CTAs */
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.625;
+    min-height: 4rem;
+    padding: 8px 2.4rem;
+    background-color: var(--accent);
+    color: var(--white);
+    border-radius: var(--border-radius);
+}
+
+/* Hero section */
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    background-color: var(--bg-main);
+    padding: 4.8rem 1.6rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.hero-list {
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.hero-list-item {
+    display: flex;
+}
+
+.hero-image {
+    width: 100%;
+    height: 24rem;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius);
+}
+
+
 /* =========================
    Tablet & up
 ========================= */
@@ -204,10 +275,10 @@ h4 {
 }
 
 
-/* Section spacing & layout */
+
 
 /* Lists / cards */
 
-/* Buttons / CTAs */
+
 
 /* Footer */

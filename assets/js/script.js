@@ -18,6 +18,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
-
-// UX / UI

@@ -191,6 +191,103 @@ h4 {
 }
 
 
+#site-footer {
+  background-color: var(--bg-main);
+  padding: 4.8rem 1.6rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-nav ul,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 0;
+}
+
+.footer-link {
+  font-family: var(--main-font);
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+.footer-link:hover {
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.footer-group-heading {
+  font-family: var(--main-font);
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+.footer-link-text {
+  font-family: var(--main-font);
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: var(--accent);
+}
+
+.footer-link-text:hover {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 8px;
+}
+
+.social-icon i {
+  color: var(--accent);
+  font-size: 2.4rem;
+}
+
+.social-icon i:hover {
+  color: rgba(47, 93, 80, 0.85);
+}
+
+.footer-legals {
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid var(--border-surface);
+  padding-top: 8px;
+}
+
+.footer-credit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.footer-credit a {
+  color: var(--text-secondary);
+}
+
+.footer-credit a:hover {
+  color: var(--accent);
+}
+
+
 /* Section spacing & layout */
 .section {
     padding: 4.8rem 1.6rem;
@@ -482,36 +579,47 @@ h4 {
   .newsletter-signup {
     flex-direction: row;
   }
+
+  #site-footer {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
 }
 
 
 @media (min-width: 992px) {
-    #site-header {
-        padding: 1.6rem 12rem;
-    }
+  #site-header {
+      padding: 1.6rem 12rem;
+  }
 
-    .section {
-        padding: 6.4rem 12rem;
-    }
+  .section {
+      padding: 6.4rem 12rem;
+  }
 
-    .hero-image {
-        height: 38rem;
-    }
+  .hero-image {
+      height: 38rem;
+  }
 
-    .text-block,
-    .important-notice,
-    .project-group,
-    .writing-list,
-    .newsletter-cta {
-        max-width: 64rem;
-    }
+  .text-block,
+  .important-notice,
+  .project-group,
+  .writing-list,
+  .newsletter-cta {
+      max-width: 64rem;
+  }
+
+  #site-footer {
+  padding-left: 12rem;
+  padding-right: 12rem;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right-column {
+    display: flex;
+    gap: 4.8rem;
+  }
 }
-
-
-
-
-/* Lists / cards */
-
-
-
-/* Footer */

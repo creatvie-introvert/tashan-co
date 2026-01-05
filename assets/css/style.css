@@ -64,6 +64,10 @@ li {
 
 
 /* Typography */
+h1, h2, h3, h4 {
+    color: var(--text-main);
+}
+
 h1 {
   font-family: var(--main-font);
   font-size: 4rem;
@@ -285,6 +289,37 @@ h4 {
     font-weight: 500;
 }
 
+/* Projects section */
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.project-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.group-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.projects-grid {
+    padding-left: 8px;
+    border-left: 1px solid var(--border-surface);
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2.4rem;
+}
+
 /* =========================
    Tablet & up
 ========================= */
@@ -335,7 +370,8 @@ h4 {
   }
 
   .text-block,
-  .important-notice {
+  .important-notice,
+  .project-group {
     max-width: 54rem;
   }
 }
@@ -350,16 +386,13 @@ h4 {
         padding: 6.4rem 12rem;
     }
 
-    /* #hero-section {
-        padding: 6.4rem 12rem;
-    } */
-
     .hero-image {
         height: 38rem;
     }
 
     .text-block,
-    .important-notice {
+    .important-notice,
+    .project-group {
         max-width: 64rem;
     }
 }

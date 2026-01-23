@@ -79,6 +79,8 @@ li {
   --border-radius: 8px;
 
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  --header-offset: 12rem;
 }
 
 /* Typography */
@@ -345,6 +347,8 @@ h4 {
 .section {
   padding: 4.8rem 1.6rem;
   background-color: var(--bg-main);
+  scroll-margin-top: var(--header-offset);
+
 }
 
 .text-block {
@@ -659,6 +663,10 @@ h4 {
 ========================= */
 
 @media (min-width: 768px) {
+  :root {
+    --header-offset: 10rem;
+  }
+
   .menu-toggle {
     display: none;
   }

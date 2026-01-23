@@ -144,8 +144,8 @@ h4 {
   color: var(--bg-main);
 }
 
-.menu-toggle img {
-  filter: invert(1);
+.menu-toggle svg {
+  color: var(--white);
 }
 
 .nav-link:focus-visible,

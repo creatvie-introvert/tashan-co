@@ -602,6 +602,47 @@ h4 {
   border: none;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  min-height: 4rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-surface);
+  padding: 1.2rem;
+  font-family: var(--main-font);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--text-main);
+  background-color: var(--white);
+}
+
+.contact-form textarea {
+  min-height: 14rem;
+  resize: vertical;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 1px solid var(--accent);
+}
+
+.form-note {
+  font-size: 1.4rem;
+}
+
+
 .email-link {
   font-size: 1.6rem;
   line-height: 1.625;

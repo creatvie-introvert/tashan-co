@@ -576,6 +576,15 @@ h4 {
   border-radius: var(--border-radius);
   border: 1px solid var(--border-surface);
   padding: 8px;
+  font-family: var(--main-font);
+  font-size: 1.6rem; 
+  line-height: 1.6;
+  color: var(--text-main);
+}
+
+.newsletter-signup input::placeholder {
+  font-size: 1.6rem;
+  color: var(--text-secondary);
 }
 
 .newsletter-signup input:focus-visible {

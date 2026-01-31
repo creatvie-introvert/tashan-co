@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
       // Reset current styles so it doesn't stay hidden when scrolling back
-      tl.set(current, { clearProps: "transform,opacity" });
+      if (current) tl.set(current, { clearProps: "transform,opacity" });
     });
   });
 });
